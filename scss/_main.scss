@@ -1,0 +1,169 @@
+
+
+
+h1 {
+  @extend %titulos;
+  text-align: center;
+  font-weight: bold;
+  font-size: 2.6rem;
+  font-style: italic;
+  margin-top: 10px;
+}
+
+p {
+  line-height: 1.5rem;
+  font-family: $fuente;
+  font-size: 1.2rem;
+  font-weight:lighter;
+  padding: 10px;
+  margin: 10px;
+
+}
+
+h2 {
+  @extend %titulos;
+  font-size: 2.2rem;
+  font-style: italic;
+  font-weight: lighter;
+  padding: 1rem;
+  margin: 2rem;
+}
+
+h3 {
+  @extend %titulos;
+  font-size: 1.5rem;
+  font-weight: lighter;
+  text-align: center;
+  margin-top: 2.4rem ;
+  margin-bottom: 2.4rem;
+}
+
+.disenolistas {
+  padding: 1.7rem;
+  margin: auto;
+  font-family: $fuente
+}  
+
+.historia {
+  font-family: $fuente;
+  margin: 2rem;
+  word-spacing: 0.5rem;
+  line-height: 1.5rem;
+}
+
+
+.formulario {
+  padding: 1rem;
+  margin: 1rem;
+  border: black;
+  background-color: #FDEFF4;
+  font-family: $fuente
+}
+
+
+.presentacion {
+  font-weight: bolder;
+  font-size: 1.2rem;
+  color: black;
+  width: 700px; 
+  flex-direction: column;
+  margin: 2rem;
+}
+
+
+.deco {
+  display: flex;
+  margin-bottom: 1rem;
+
+  .fotos {
+    padding: 1.5rem;
+    border-radius: 3rem;
+    width: 30%;
+    height: auto;
+  }
+
+}
+
+footer {
+  margin: 2.5rem;
+  font-size: 1rem;
+  font-weight: lighter;
+  text-align: center;
+}
+
+#inicio {
+  padding: 1.3rem;
+
+}
+
+
+
+.grid-inicio {
+  display: grid;
+  height: 600px;
+  grid-template-columns: 1fr 1fr;
+  grid-template-areas: 'cabecera cabecera'
+                       'foto texto'
+                       'footer footer'; 
+  grid-template-rows: 20% 65% 15%; 
+  margin: 30px;
+  row-gap: 40px;
+  justify-content: center;
+    
+}
+
+.caja1 {
+  grid-area: cabecera;
+  flex-direction: column;
+  text-align: center;
+}
+
+.caja2 {
+  grid-area: foto;
+  flex-direction: column;
+  justify-items: center;
+}
+
+.caja3 {
+  grid-area: texto;
+  flex-direction: column;
+  display: flex;
+  justify-content: center;
+}
+
+.caja4 {
+  grid-area: footer;
+  text-align: center;
+}
+
+.navbar-nav {
+  color: $color-principal;
+}
+
+.nav-item:hover {
+  background-color: $color-secundario;
+}
+
+.card-text  { 
+  background-color: $color-secundario;
+}
+
+.card-img2 {
+  margin-top: 30px;
+}
+
+.list-group {
+  font-family: $fuente;
+  color: $color-principal;
+}
+
+.carousel-inner {
+  width: 700px;
+  height: 700px;
+margin: auto;
+margin-top: 70px; }
+
+
+
+
+  
